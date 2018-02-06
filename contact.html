@@ -28,13 +28,13 @@
 			</div>
 			<div id="navbar2" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active">
+					<li>
 						<a href="index.html">About</a>
 					</li>
 					<li>
 						<a href="portfolio.html">Portfolio</a>
 					</li>
-					<li>
+					<li class="active">
 						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
@@ -50,17 +50,24 @@
 				<div class="row">
 					<div class="col-md-8">
 						<section class="content">
-							<h1>About Me</h1>
+							<h1>Contact Me</h1>
 							<hr>
-							<img src="./assets/images/kvnsmithcircle.png" alt="Kevin Smith" class="image1">
-							<p>My name is Kevin Smith, I have been creating websites for over 10 years, and I love helping people create awesome
-								looking websites.
-							</p>
-							<p>I'm currently taking the Coding Bootcamp at the University of Utah, and will be graduating in July. I also have an
-								associates degree in Computer Network Systems, from ITT Technical Institute.</p>
-							<p>Feel free to take a look around and see all of my
-								<a href="portfolio.html"> awesome projects</a>. I'm always looking for fun projects, and would love to work on something for you or your company.</p>
-							<p>In my off-time I like gardening, snowboarding, and hanging out with my two beautiful dogs Olly and Titan.</p>
+							<form>
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>
+									<div class="form-group">
+											<label for="message-text">Message</label>
+											<textarea class="form-control" rows="3" id="message-text"></textarea>
+									</div>
+									
+									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+								</form>
 						</section>
 					</div>
 					<div class="col-md-4">
@@ -76,6 +83,7 @@
 										<a href="https://www.linkedin.com/in/kvnsmith/" target="_blank">
 											<img src="./assets/images/linkedin.png" alt="LinkedIn" class="connect">
 										</a>
+
 										<a href="https://stackoverflow.com/users/9217650/kevin-smith" target="_blank">
 											<img src="./assets/images/stackoverflow.png" alt="Stack Overflow" class="connect">
 										</a>
@@ -88,7 +96,8 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+
+	<footer class="footer">
 		<p>&copy;
 			<span id="btmfooter"></span> Kevin Smith</p>
 		<script>

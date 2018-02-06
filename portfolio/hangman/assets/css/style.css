@@ -1,0 +1,88 @@
+html {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	background-image: url("../images/carbon_fibre_@2X.png");
+	width: 80%;
+	margin: auto;
+}
+#word,#used {
+	font-family: 'Kalam', cursive;
+	font-size: 30px;
+	color: black;
+}
+h1 {
+	color: black;
+}
+hr {
+	border: solid 1px steelblue;
+}
+.container {
+	background-color: white;
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+p {
+	color: black;
+}
+
+.current-word {
+	list-style: none;
+	font-size: px;
+}
+
+.output {
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+/* Keep it simple - improvement would be to not display characters */
+
+.letter {
+	display: inline-block;
+	list-style: none;
+	width: 30px;
+	margin: 0 5px;
+	border-bottom: 1px solid black;
+	text-align: center;
+	color: white;
+	font-size: 36px;
+}
+
+.current-word {
+	display: inline-block;
+	list-style: none;
+	font-size: 30px;
+	margin-left:-38px;
+}
+.output {
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.correct {
+	background-color: steelblue;
+	/*    transition: all 1s ease; */
+}
+
+.error {
+	color: red;
+	opacity: 1;
+	font-size: 36px;
+}
+
+.warning {
+	color: orange;
+	opacity: 1;
+	font-size: 30px;
+}
+
+.win {
+	color: steelblue;
+	opacity: 1;
+	font-size: 36px;
+	font-weight: bold;
+	border-bottom: solid 1px steelblue;
+}
+.btn {
+	background-color: steelblue;
+}

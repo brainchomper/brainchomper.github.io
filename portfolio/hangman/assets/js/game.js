@@ -3,7 +3,7 @@ var guessInput, guess, guessButton, lettersGuessed, lettersMatched, output, man,
 /* start config options */
 var availableLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var lives = 6;
-var words = ["olly", "dog", "titan", "complex", "beer", "vodka", "lizard", "scientist"];
+var words = ["olly", "dog", "titan", "complex", "beer", "vodka", "lizard", "scientist", "orange","string","work","biology","lemon","lime"];
 var messages = {
 	win: 'You WON!',
 	lose: 'Game Over!',
@@ -65,27 +65,21 @@ document.onkeyup = function (e) {
 				lives--;
 				man.innerHTML = 'You Have ' + lives + ' Guesses Remaining';
 				if (lives==5){
-					// document.getElementById("#imageDiv").innerHTML =;
 					$('#hangmanImg').attr('src', './assets/images/hangman1.png');
 				};
 				if (lives==4){
-					// document.getElementById("#imageDiv").innerHTML =;
 					$('#hangmanImg').attr('src', './assets/images/hangman2.png');
 				};
 				if (lives==3){
-					// document.getElementById("#imageDiv").innerHTML =;
 					$('#hangmanImg').attr('src', './assets/images/hangman3.png');
 				};
 				if (lives==2){
-					// document.getElementById("#imageDiv").innerHTML =;
 					$('#hangmanImg').attr('src', './assets/images/hangman4.png');
 				};
 				if (lives==1){
-					// document.getElementById("#imageDiv").innerHTML =;
 					$('#hangmanImg').attr('src', './assets/images/hangman5.png');
 				};
 				if (lives==0){
-					// document.getElementById("#imageDiv").innerHTML =;
 					$('#hangmanImg').attr('src', './assets/images/hangman6.png');
 				};
 

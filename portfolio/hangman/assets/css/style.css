@@ -3,8 +3,19 @@ html {
 }
 body {
 	background-image: url("../images/carbon_fibre_@2X.png");
-	width: 80%;
+	width: 100%;
 	margin: auto;
+}
+.navbar-brand>img {
+	padding-left: 20px;
+  height: 100%;
+	width: auto;
+}
+.navbar-nav {
+	padding: 20px;
+}
+.navbar-brand {
+	height: 100%;
 }
 #word,#used {
 	font-family: 'Kalam', cursive;
@@ -18,6 +29,7 @@ hr {
 	border: solid 1px steelblue;
 }
 .container {
+	width: 80%;
 	background-color: white;
 	border-radius: 10px;
 	padding-bottom: 10px;
@@ -35,8 +47,6 @@ p {
 	opacity: 0;
 	transition: opacity 1s ease;
 }
-/* Keep it simple - improvement would be to not display characters */
-
 .letter {
 	display: inline-block;
 	list-style: none;
@@ -85,4 +95,18 @@ p {
 }
 .btn {
 	background-color: steelblue;
+}
+footer {
+	border-top: solid 1px steelblue;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	color: white;
+	background-color: grey;
+	width: 100%;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+}
+footer:hover {
+	color: steelblue;
 }

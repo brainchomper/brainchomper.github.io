@@ -12,6 +12,7 @@ font-size: 16px;
 h1 {
 	font-size: 25px;
 	color: steelblue;
+	margin-left: 10px;
 }
 h3 {
 	font-size: 20px;
@@ -23,6 +24,8 @@ a {
 }
 hr {
 	border: solid 1px steelblue;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .navbar-brand {
 	height: 100%;

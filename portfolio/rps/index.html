@@ -11,7 +11,7 @@
 	<title>Rock Paper Scissors</title>
 </head>
 
-<body>
+<body onload="myFunction()">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -48,7 +48,17 @@
     <p>Press r, p or s to start playing!</p>
 	</div>
 	</div>		
-
+	<footer>
+		<p>&copy;
+			<span id="btmfooter"></span> Kevin Smith</p>
+		<script>
+			function myFunction() {
+				var d = new Date();
+				var n = d.getFullYear();
+				document.getElementById("btmfooter").innerHTML = n;
+			}
+		</script>
+	</footer>
   <script type="text/javascript">
     // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
     var computerChoices = ["r", "p", "s"];
@@ -100,7 +110,7 @@
         document.querySelector("#game").innerHTML = html;
       }
     };
-  </script>
+	</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="assets/js/bootstrap.js"></script>

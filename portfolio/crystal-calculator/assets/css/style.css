@@ -1,0 +1,38 @@
+body {
+	background-image: url("../images/carbon_fibre_@2X.png");
+}
+h1,h2,h3,h4,h5 {
+	color: whitesmoke;
+}
+p {
+	color: black;
+}
+.crystalRow {
+	width: 80%;
+	margin: auto;
+}
+.navbar-brand>img {
+	padding-left: 20px;
+  height: 100%;
+	width: auto;
+}
+.navbar-nav {
+	padding: 20px;
+}
+.navbar-brand {
+	height: 100%;
+}
+footer {
+	border-top: solid 1px steelblue;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	color: white;
+	background-color: grey;
+	width: 100%;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+}
+footer:hover {
+	color: steelblue;
+}

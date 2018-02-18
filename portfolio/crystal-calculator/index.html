@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Crystals Collector">
+	<title>Week 4 - Crystal Collector</title>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body onload="myFunction()">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">
+					<img src="../../assets/images/logo.png" alt="Kevin Smith">
+				</a>
+			</div>
+			<div id="navbar2" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="../../index.html">Home</a>
+					</li>
+					<li class="active">
+						<a href="../../portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</nav>
+	<div class="container-fluid">
+
+		<div class="jumbotron">
+			<!-- header at the top -->
+			<h1 align="center">Crystal Collector!</h1>
+			<!-- then come instructions -->
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-3" align="center">
+				<p id="winsCounter">Wins: </p>
+			</div>
+			<div class="col-sm-3" align="center">
+				<p id="lossesCounter">losses: </p>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+
+		<!-- random number div and wins/losses div -->
+
+		<div class="row">
+			<div class="col-sm-3">
+
+			</div>
+			<div class="col-sm-3" align="center">
+				<h5>Number To Guess:</h5>
+				<h2 id="randomNumber"></h2>
+			</div>
+			<div class="col-sm-3" align="center">
+				<h5>Current Score:</h5>	
+				<h2 id="userScore">score</h2>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<!-- crystals -->
+		<div class="row crystalRow" align="center">
+				<div class="col-sm-2"></div>
+			<div class="col-sm-4 crystal" value="crystal1">
+				<img src="assets/images/crystal1.png" alt="crystal1">
+			</div>
+			<div class="col-sm-4 crystal" value="crystal2">
+				<img src="assets/images/crystal2.png" alt="crystal2">
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div class="row crystalRow" align="center">
+				<div class="col-sm-2"></div>
+			<div class="col-sm-4 crystal" value="crystal3">
+				<img src="assets/images/crystal3.png" alt="crystal3">
+			</div>
+			<div class="col-sm-4 crystal" value="crystal4">
+				<img src="assets/images/crystal4.png" alt="crystal4">
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+
+		<!-- now end the container	 -->
+	</div>
+	<footer>
+			<p>&copy;
+				<span id="btmfooter"></span> Kevin Smith</p>
+			<script>
+				function myFunction() {
+					var d = new Date();
+					var n = d.getFullYear();
+					document.getElementById("btmfooter").innerHTML = n;
+				}
+			</script>
+		
+	<!-- Link to game javascript  -->
+	<script type="text/javascript" src="assets/js/game.js"></script>
+
+</body>
+
+</html>

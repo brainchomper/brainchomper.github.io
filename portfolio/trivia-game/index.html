@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Trivia Game</title>
+	<script src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script src="./assets/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<audio id="my_audio" src="./assets/sounds/Futurama-Theme.mp3" loop="loop"></audio>
+</head>
+
+<body onload="getYear()">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">
+					<img src="./assets/images/logo.png" alt="Kevin Smith">
+				</a>
+			</div>
+			<div id="navbar2" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://brainchomper.github.io">Home</a>
+					</li>
+					<li class="active">
+						<a href="https://brainchomper.github.io/portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="https://brainchomper.github.io/contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</nav>
+	<div>
+		<img src="./assets/images/banner-big.png" width="100%">
+	</div>
+	<div class="container mainGame">
+		<!-- <h5 class="title">Futurama Trivia Game</h5> -->
+		<img src="./assets/images/opener.gif" width="100%" class="img-responsive title">
+		<button class="btn btn-primary" id="startBtn">Start Game</button>
+		<div id="timeLeft"></div>
+		<div id="currentQuestion"></div>
+		<div class="question"></div>
+		<div class="listOfAnswers"></div>
+		<!-- correct or not -->
+		<div id="message"></div>
+		<div id="correctAnswer"></div>
+		<div id="correctImage" align="center"></div>
+		<div id="finalMessage"></div>
+		<div id="correctCount"></div>
+		<div id="wrongCount"></div>
+		<div id="notAnswered"></div>
+		<div id="ender" align="center"></div>
+		<div id="restartBtn"></div>
+	</div>
+
+	<footer>
+		<p>&copy;
+			<span id="btmfooter"></span> Kevin Smith</p>
+		<script>
+			function getYear() {
+				var d = new Date();
+				var n = d.getFullYear();
+				document.getElementById("btmfooter").innerHTML = n;
+			}
+		</script>
+		<script src="./assets/js/game.js"></script>
+</body>
+
+</html>

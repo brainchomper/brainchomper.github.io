@@ -5,14 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Trivia Game</title>
 	<script src="./assets/js/jquery-3.3.1.min.js"></script>
-	<script src="./assets/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/bootstrap.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<audio id="my_audio" src="./assets/sounds/Futurama-Theme.mp3" loop="loop"></audio>
+	<title>Giphy API Homework</title>
 </head>
 
 <body onload="getYear()">
@@ -46,28 +44,34 @@
 		</div>
 		<!--/.container-fluid -->
 	</nav>
-	<div>
-		<img src="./assets/images/banner-big.png" width="100%">
-	</div>
-	<div class="container mainGame">
-		<!-- <h5 class="title">Futurama Trivia Game</h5> -->
-		<img src="./assets/images/opener.gif" width="100%" class="img-responsive title">
-		<button class="btn btn-primary" id="startBtn">Start Game</button>
-		<div id="timeLeft"></div>
-		<div id="currentQuestion"></div>
-		<div class="question"></div>
-		<div class="listOfAnswers"></div>
-		<!-- correct or not -->
-		<div id="message"></div>
-		<div id="correctAnswer"></div>
-		<div id="correctImage" align="center"></div>
-		<div id="finalMessage"></div>
-		<div id="correctCount"></div>
-		<div id="wrongCount"></div>
-		<div id="notAnswered"></div>
-		<div id="ender" align="center"></div>
-		<div id="restartBtn"></div>
-	</div>
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12" id="topicBtns"  align="center"></div>
+			</div>
+			<div class="container-fluid"></div>
+			<div class="row">
+				<div class="col-md-3" id="gifForm">
+					<div class="panel panel-default" align="center">
+						<div class="panel-body"  align="center">
+							<form>
+								<label for="topicInput">Add A New Topic</label>
+								<input type="text" class="form-control" id="topicInput">
+								<p></p>
+								<input type="submit" class="btn btn-primary" id="addTopic" value="Add New Topic">
+								<p id="message" class="message"></p>
+								<input type="submit" class="btn btn-danger" id="clearTopics" value="Clear Added Topics">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9" id="gifResults"></div>
+				
+				<!-- end container-fluid -->
+			</div>
+		</div>
+	</section>
 
 	<footer>
 		<p>&copy;
@@ -80,7 +84,7 @@
 			}
 		</script>
 		</footer>
-		<script src="./assets/js/game.js"></script>
+	<script src="./assets/js/js.js"></script>
 </body>
 
 </html>

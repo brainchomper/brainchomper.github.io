@@ -5,7 +5,9 @@ html {
 body {
 	background-image: url("../images/congruent_outline.png")
 }
-
+p{
+	color: whitesmoke;
+}
 .gifDiv {
 	float: left;
 	margin: 5px;
